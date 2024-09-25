@@ -202,6 +202,7 @@
             // 
             // calculateT
             // 
+            this.calculateT.Enabled = false;
             this.calculateT.Location = new System.Drawing.Point(137, 291);
             this.calculateT.Name = "calculateT";
             this.calculateT.Size = new System.Drawing.Size(100, 26);
@@ -241,13 +242,13 @@
             // 
             // printRecipt
             // 
+            this.printRecipt.Enabled = false;
             this.printRecipt.Location = new System.Drawing.Point(146, 389);
             this.printRecipt.Name = "printRecipt";
             this.printRecipt.Size = new System.Drawing.Size(80, 37);
             this.printRecipt.TabIndex = 17;
             this.printRecipt.Text = "Print Recipt";
             this.printRecipt.UseVisualStyleBackColor = true;
-            this.printRecipt.Visible = false;
             this.printRecipt.Click += new System.EventHandler(this.printRecipt_Click);
             // 
             // titleRecipt
@@ -256,7 +257,7 @@
             this.titleRecipt.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.titleRecipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleRecipt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.titleRecipt.Location = new System.Drawing.Point(538, 23);
+            this.titleRecipt.Location = new System.Drawing.Point(555, 19);
             this.titleRecipt.Name = "titleRecipt";
             this.titleRecipt.Size = new System.Drawing.Size(124, 24);
             this.titleRecipt.TabIndex = 18;
@@ -301,10 +302,11 @@
             // 
             this.flashlightRecipt.AutoSize = true;
             this.flashlightRecipt.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.flashlightRecipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.flashlightRecipt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.flashlightRecipt.Location = new System.Drawing.Point(491, 71);
             this.flashlightRecipt.Name = "flashlightRecipt";
-            this.flashlightRecipt.Size = new System.Drawing.Size(54, 13);
+            this.flashlightRecipt.Size = new System.Drawing.Size(67, 16);
             this.flashlightRecipt.TabIndex = 23;
             this.flashlightRecipt.Text = "Flashlight:";
             this.flashlightRecipt.Visible = false;
@@ -313,10 +315,11 @@
             // 
             this.crowbarDisplay.AutoSize = true;
             this.crowbarDisplay.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.crowbarDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.crowbarDisplay.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.crowbarDisplay.Location = new System.Drawing.Point(491, 95);
             this.crowbarDisplay.Name = "crowbarDisplay";
-            this.crowbarDisplay.Size = new System.Drawing.Size(49, 13);
+            this.crowbarDisplay.Size = new System.Drawing.Size(60, 16);
             this.crowbarDisplay.TabIndex = 24;
             this.crowbarDisplay.Text = "Crowbar:";
             this.crowbarDisplay.Visible = false;
@@ -325,10 +328,11 @@
             // 
             this.skiMaskRecipt.AutoSize = true;
             this.skiMaskRecipt.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.skiMaskRecipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.skiMaskRecipt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.skiMaskRecipt.Location = new System.Drawing.Point(491, 124);
             this.skiMaskRecipt.Name = "skiMaskRecipt";
-            this.skiMaskRecipt.Size = new System.Drawing.Size(54, 13);
+            this.skiMaskRecipt.Size = new System.Drawing.Size(65, 16);
             this.skiMaskRecipt.TabIndex = 25;
             this.skiMaskRecipt.Text = "Ski Mask:";
             this.skiMaskRecipt.Visible = false;
@@ -337,10 +341,11 @@
             // 
             this.subtotalRecipt.AutoSize = true;
             this.subtotalRecipt.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.subtotalRecipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.subtotalRecipt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.subtotalRecipt.Location = new System.Drawing.Point(494, 173);
             this.subtotalRecipt.Name = "subtotalRecipt";
-            this.subtotalRecipt.Size = new System.Drawing.Size(46, 13);
+            this.subtotalRecipt.Size = new System.Drawing.Size(56, 16);
             this.subtotalRecipt.TabIndex = 26;
             this.subtotalRecipt.Text = "Subtotal";
             this.subtotalRecipt.Visible = false;
@@ -349,10 +354,11 @@
             // 
             this.taxRecipt.AutoSize = true;
             this.taxRecipt.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.taxRecipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.taxRecipt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.taxRecipt.Location = new System.Drawing.Point(494, 196);
             this.taxRecipt.Name = "taxRecipt";
-            this.taxRecipt.Size = new System.Drawing.Size(25, 13);
+            this.taxRecipt.Size = new System.Drawing.Size(30, 16);
             this.taxRecipt.TabIndex = 27;
             this.taxRecipt.Text = "Tax";
             this.taxRecipt.Visible = false;
@@ -361,10 +367,11 @@
             // 
             this.totalRecipt.AutoSize = true;
             this.totalRecipt.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.totalRecipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalRecipt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.totalRecipt.Location = new System.Drawing.Point(494, 219);
             this.totalRecipt.Name = "totalRecipt";
-            this.totalRecipt.Size = new System.Drawing.Size(31, 13);
+            this.totalRecipt.Size = new System.Drawing.Size(38, 16);
             this.totalRecipt.TabIndex = 28;
             this.totalRecipt.Text = "Total";
             this.totalRecipt.Visible = false;
@@ -373,10 +380,11 @@
             // 
             this.tenderedRecipt.AutoSize = true;
             this.tenderedRecipt.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tenderedRecipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tenderedRecipt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tenderedRecipt.Location = new System.Drawing.Point(494, 269);
             this.tenderedRecipt.Name = "tenderedRecipt";
-            this.tenderedRecipt.Size = new System.Drawing.Size(53, 13);
+            this.tenderedRecipt.Size = new System.Drawing.Size(67, 16);
             this.tenderedRecipt.TabIndex = 29;
             this.tenderedRecipt.Text = "Tendered";
             this.tenderedRecipt.Visible = false;
@@ -385,10 +393,11 @@
             // 
             this.changeRecipt.AutoSize = true;
             this.changeRecipt.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.changeRecipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.changeRecipt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.changeRecipt.Location = new System.Drawing.Point(494, 291);
             this.changeRecipt.Name = "changeRecipt";
-            this.changeRecipt.Size = new System.Drawing.Size(44, 13);
+            this.changeRecipt.Size = new System.Drawing.Size(54, 16);
             this.changeRecipt.TabIndex = 30;
             this.changeRecipt.Text = "Change";
             this.changeRecipt.Visible = false;
@@ -397,10 +406,11 @@
             // 
             this.message.AutoSize = true;
             this.message.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.message.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.message.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.message.Location = new System.Drawing.Point(494, 333);
             this.message.Name = "message";
-            this.message.Size = new System.Drawing.Size(97, 13);
+            this.message.Size = new System.Drawing.Size(119, 16);
             this.message.TabIndex = 31;
             this.message.Text = "Have A Great Day!";
             this.message.Visible = false;
@@ -409,10 +419,11 @@
             // 
             this.dateRecipt.AutoSize = true;
             this.dateRecipt.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dateRecipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateRecipt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dateRecipt.Location = new System.Drawing.Point(494, 372);
             this.dateRecipt.Name = "dateRecipt";
-            this.dateRecipt.Size = new System.Drawing.Size(30, 13);
+            this.dateRecipt.Size = new System.Drawing.Size(36, 16);
             this.dateRecipt.TabIndex = 32;
             this.dateRecipt.Text = "Date";
             this.dateRecipt.Visible = false;
@@ -421,10 +432,11 @@
             // 
             this.orderRecipt.AutoSize = true;
             this.orderRecipt.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.orderRecipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.orderRecipt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.orderRecipt.Location = new System.Drawing.Point(494, 401);
             this.orderRecipt.Name = "orderRecipt";
-            this.orderRecipt.Size = new System.Drawing.Size(73, 13);
+            this.orderRecipt.Size = new System.Drawing.Size(92, 16);
             this.orderRecipt.TabIndex = 33;
             this.orderRecipt.Text = "Order Number";
             this.orderRecipt.Visible = false;
@@ -433,10 +445,11 @@
             // 
             this.nameRecipt.AutoSize = true;
             this.nameRecipt.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.nameRecipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameRecipt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.nameRecipt.Location = new System.Drawing.Point(494, 428);
             this.nameRecipt.Name = "nameRecipt";
-            this.nameRecipt.Size = new System.Drawing.Size(64, 13);
+            this.nameRecipt.Size = new System.Drawing.Size(81, 16);
             this.nameRecipt.TabIndex = 34;
             this.nameRecipt.Text = "Order Name";
             this.nameRecipt.Visible = false;
@@ -449,6 +462,7 @@
             this.newOrder.TabIndex = 35;
             this.newOrder.Text = "New Order";
             this.newOrder.UseVisualStyleBackColor = true;
+            this.newOrder.Click += new System.EventHandler(this.newOrder_Click);
             // 
             // prices
             // 
@@ -458,14 +472,16 @@
             this.prices.TabIndex = 36;
             this.prices.Text = "Show Prices";
             this.prices.UseVisualStyleBackColor = true;
+            this.prices.Click += new System.EventHandler(this.prices_Click);
             // 
             // finalFlashlight
             // 
             this.finalFlashlight.AutoSize = true;
             this.finalFlashlight.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.finalFlashlight.Location = new System.Drawing.Point(580, 71);
+            this.finalFlashlight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finalFlashlight.Location = new System.Drawing.Point(627, 71);
             this.finalFlashlight.Name = "finalFlashlight";
-            this.finalFlashlight.Size = new System.Drawing.Size(0, 13);
+            this.finalFlashlight.Size = new System.Drawing.Size(0, 16);
             this.finalFlashlight.TabIndex = 37;
             this.finalFlashlight.Visible = false;
             // 
@@ -473,10 +489,11 @@
             // 
             this.finalCrowbar.AutoSize = true;
             this.finalCrowbar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.finalCrowbar.ForeColor = System.Drawing.Color.Turquoise;
+            this.finalCrowbar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finalCrowbar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.finalCrowbar.Location = new System.Drawing.Point(627, 95);
             this.finalCrowbar.Name = "finalCrowbar";
-            this.finalCrowbar.Size = new System.Drawing.Size(0, 13);
+            this.finalCrowbar.Size = new System.Drawing.Size(0, 16);
             this.finalCrowbar.TabIndex = 38;
             this.finalCrowbar.Visible = false;
             // 
@@ -484,10 +501,11 @@
             // 
             this.finalSkiMask.AutoSize = true;
             this.finalSkiMask.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.finalSkiMask.ForeColor = System.Drawing.Color.Turquoise;
+            this.finalSkiMask.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finalSkiMask.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.finalSkiMask.Location = new System.Drawing.Point(627, 124);
             this.finalSkiMask.Name = "finalSkiMask";
-            this.finalSkiMask.Size = new System.Drawing.Size(0, 13);
+            this.finalSkiMask.Size = new System.Drawing.Size(0, 16);
             this.finalSkiMask.TabIndex = 39;
             this.finalSkiMask.Visible = false;
             // 
@@ -495,10 +513,11 @@
             // 
             this.finalSubtotal.AutoSize = true;
             this.finalSubtotal.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.finalSubtotal.ForeColor = System.Drawing.Color.Turquoise;
+            this.finalSubtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finalSubtotal.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.finalSubtotal.Location = new System.Drawing.Point(627, 173);
             this.finalSubtotal.Name = "finalSubtotal";
-            this.finalSubtotal.Size = new System.Drawing.Size(0, 13);
+            this.finalSubtotal.Size = new System.Drawing.Size(0, 16);
             this.finalSubtotal.TabIndex = 40;
             this.finalSubtotal.Visible = false;
             // 
@@ -506,10 +525,11 @@
             // 
             this.finalTax.AutoSize = true;
             this.finalTax.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.finalTax.ForeColor = System.Drawing.Color.Turquoise;
+            this.finalTax.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finalTax.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.finalTax.Location = new System.Drawing.Point(627, 196);
             this.finalTax.Name = "finalTax";
-            this.finalTax.Size = new System.Drawing.Size(0, 13);
+            this.finalTax.Size = new System.Drawing.Size(0, 16);
             this.finalTax.TabIndex = 41;
             this.finalTax.Visible = false;
             // 
@@ -517,10 +537,11 @@
             // 
             this.finalTotal.AutoSize = true;
             this.finalTotal.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.finalTotal.ForeColor = System.Drawing.Color.Turquoise;
+            this.finalTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finalTotal.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.finalTotal.Location = new System.Drawing.Point(627, 219);
             this.finalTotal.Name = "finalTotal";
-            this.finalTotal.Size = new System.Drawing.Size(0, 13);
+            this.finalTotal.Size = new System.Drawing.Size(0, 16);
             this.finalTotal.TabIndex = 42;
             this.finalTotal.Visible = false;
             // 
@@ -528,10 +549,11 @@
             // 
             this.finalTendered.AutoSize = true;
             this.finalTendered.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.finalTendered.ForeColor = System.Drawing.Color.Turquoise;
+            this.finalTendered.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finalTendered.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.finalTendered.Location = new System.Drawing.Point(628, 269);
             this.finalTendered.Name = "finalTendered";
-            this.finalTendered.Size = new System.Drawing.Size(0, 13);
+            this.finalTendered.Size = new System.Drawing.Size(0, 16);
             this.finalTendered.TabIndex = 43;
             this.finalTendered.Visible = false;
             // 
@@ -539,10 +561,11 @@
             // 
             this.finalChange.AutoSize = true;
             this.finalChange.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.finalChange.ForeColor = System.Drawing.Color.Turquoise;
+            this.finalChange.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finalChange.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.finalChange.Location = new System.Drawing.Point(627, 291);
             this.finalChange.Name = "finalChange";
-            this.finalChange.Size = new System.Drawing.Size(0, 13);
+            this.finalChange.Size = new System.Drawing.Size(0, 16);
             this.finalChange.TabIndex = 44;
             this.finalChange.Visible = false;
             // 
@@ -550,10 +573,11 @@
             // 
             this.finalDate.AutoSize = true;
             this.finalDate.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.finalDate.ForeColor = System.Drawing.Color.Turquoise;
+            this.finalDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finalDate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.finalDate.Location = new System.Drawing.Point(627, 372);
             this.finalDate.Name = "finalDate";
-            this.finalDate.Size = new System.Drawing.Size(0, 13);
+            this.finalDate.Size = new System.Drawing.Size(0, 16);
             this.finalDate.TabIndex = 45;
             this.finalDate.Visible = false;
             // 
@@ -561,10 +585,11 @@
             // 
             this.finalOrderNumber.AutoSize = true;
             this.finalOrderNumber.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.finalOrderNumber.ForeColor = System.Drawing.Color.Turquoise;
+            this.finalOrderNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finalOrderNumber.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.finalOrderNumber.Location = new System.Drawing.Point(628, 400);
             this.finalOrderNumber.Name = "finalOrderNumber";
-            this.finalOrderNumber.Size = new System.Drawing.Size(0, 13);
+            this.finalOrderNumber.Size = new System.Drawing.Size(0, 16);
             this.finalOrderNumber.TabIndex = 46;
             this.finalOrderNumber.Visible = false;
             // 
@@ -572,10 +597,11 @@
             // 
             this.finalOrderName.AutoSize = true;
             this.finalOrderName.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.finalOrderName.ForeColor = System.Drawing.Color.Turquoise;
+            this.finalOrderName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finalOrderName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.finalOrderName.Location = new System.Drawing.Point(628, 428);
             this.finalOrderName.Name = "finalOrderName";
-            this.finalOrderName.Size = new System.Drawing.Size(0, 13);
+            this.finalOrderName.Size = new System.Drawing.Size(0, 16);
             this.finalOrderName.TabIndex = 47;
             this.finalOrderName.Visible = false;
             // 
@@ -585,9 +611,9 @@
             this.errorOutput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.errorOutput.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.errorOutput.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.errorOutput.Location = new System.Drawing.Point(484, 2);
+            this.errorOutput.Location = new System.Drawing.Point(491, 2);
             this.errorOutput.Name = "errorOutput";
-            this.errorOutput.Size = new System.Drawing.Size(268, 439);
+            this.errorOutput.Size = new System.Drawing.Size(320, 449);
             this.errorOutput.TabIndex = 48;
             this.errorOutput.Visible = false;
             // 
