@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Threading;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,6 +30,8 @@ namespace BURGLARY
         double flashlightVari;
         double crowbarVari;
         double skiMaskVari;
+        SoundPlayer player = new SoundPlayer(Properties.Resources.Checkout_Scanner_Beep_SoundBible_com_593325210);
+        SoundPlayer steve = new SoundPlayer(Properties.Resources.steve_calling_Dave_1592335974);
         public Form1()
         {
             InitializeComponent();
@@ -57,8 +60,20 @@ namespace BURGLARY
                  totalVari = subtotalVari + taxVari;
 
                 subtotalDisplay.Text = $"{subtotalVari.ToString("C")}";
+                player.Play();
+                Refresh();
+                Thread.Sleep(1000);
+
                 taxDisplay.Text = $"{taxVari.ToString("C")}";
+                player.Play();
+                Refresh();
+                Thread.Sleep(1000);
+
                 totalDisplay.Text = $"{totalVari.ToString("C")}";
+                player.Play();
+                Refresh();
+                Thread.Sleep(1000);
+
                 calculateT.Enabled= true;
 
 
@@ -82,6 +97,9 @@ namespace BURGLARY
 
                 changeVari = tenderedVari - totalVari;
                 changeDisplay.Text = $"{changeVari.ToString("C")}";
+                player.Play();
+                Refresh();
+                Thread.Sleep(1000);
                 printRecipt.Enabled = true; 
 
             }
@@ -98,65 +116,78 @@ namespace BURGLARY
             orderVari = nameInput.Text;
             titleRecipt.Visible = true;
             errorOutput.Visible = true;
+            player.Play();
             Refresh();
             Thread.Sleep(1000);
             finalFlashlight.Text = $"x{flashlightNumber}   =   {flashlightVari.ToString("C")}";
             finalFlashlight.Visible = true;
             flashlightRecipt.Visible = true;
+            player.Play();
             Refresh();
             Thread.Sleep(1000);
             finalCrowbar.Text = $"x{crowbarNumber}   =   {crowbarVari.ToString("C")}";
             finalCrowbar.Visible = true;
             crowbarDisplay.Visible = true;
+            player.Play();
             Refresh();
             Thread.Sleep(1000);
             finalSkiMask.Text = $"x{skiMaskNumber}   =   {skiMaskVari.ToString("C")}";
             finalSkiMask.Visible = true;
             skiMaskRecipt.Visible = true;
+            player.Play();
             Refresh();
             Thread.Sleep(1000);
             subtotalRecipt.Visible = true;
             finalSubtotal.Text = $"{subtotalVari.ToString("C")}";
             finalSubtotal.Visible = true;
+            player.Play();
             Refresh();
             Thread.Sleep(1000);
             taxRecipt.Visible = true;
             finalTax.Text = $"{taxVari.ToString("C")}";
             finalTax.Visible = true;
+            player.Play();
             Refresh();
             Thread.Sleep(1000);
             totalRecipt.Visible = true;
             finalTotal.Text = $"{totalVari.ToString("C")}";
             finalTotal.Visible = true;
+            player.Play();
             Refresh();
             Thread.Sleep(1000);
             tenderedRecipt.Visible = true;
             finalTendered.Text = $"{tenderedVari.ToString("C")}";
             finalTendered.Visible = true;
+            player.Play();
             Refresh();
             Thread.Sleep(1000);
             changeRecipt.Visible = true;
             changeDisplay.Visible = true;
             finalChange.Text = $"{changeVari.ToString("C")}";
             finalChange.Visible = true;
+            player.Play();
             Refresh();
             Thread.Sleep(1000);
             message.Visible = true;
+            player.Play();
             Refresh();
             Thread.Sleep(1000);
             dateRecipt.Visible = true;
             finalDate.Visible = true;
             finalDate.Text = "September   25   2024";
+            player.Play();
             Refresh();
             Thread.Sleep(1000);
             orderRecipt.Visible = true;
             finalOrderNumber.Visible = true;
             finalOrderNumber.Text = "3025647";
+            player.Play();
             Refresh();
             Thread.Sleep(1000);
             nameRecipt.Visible = true;
             finalOrderName.Visible = true;
             finalOrderName.Text = $"{orderVari}";
+            steve.Play();
             Refresh();
             Thread.Sleep(1000);
 
@@ -194,6 +225,27 @@ namespace BURGLARY
             taxDisplay.Text = "";
             totalDisplay.Text = "";
             changeDisplay.Text = "";
+            errorOutput.Visible = false;
+            flashlightRecipt.Visible = false;
+            crowbarDisplay.Visible = false;
+            skiMaskRecipt.Visible = false;
+            subtotalRecipt.Visible = false;
+            totalRecipt.Visible = false;
+            taxRecipt.Visible = false;
+            tenderedRecipt.Visible = false;
+            changeRecipt.Visible = false;
+            message.Visible = false;
+            dateRecipt.Visible = false;
+            orderRecipt.Visible = false;
+            nameRecipt.Visible = false;
+            finalFlashlight.Visible = false;
+            finalCrowbar.Visible = false;
+            finalFlashlight.Text = "";
+            finalCrowbar.Text = "";
+            finalSkiMask.Text = "";
+            finalSkiMask.Visible = false;
+
+
         }
     }
 }

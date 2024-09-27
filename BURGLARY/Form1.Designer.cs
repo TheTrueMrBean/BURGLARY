@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.title = new System.Windows.Forms.Label();
             this.flashlightInput = new System.Windows.Forms.TextBox();
             this.crowbarInput = new System.Windows.Forms.TextBox();
@@ -674,6 +675,7 @@
             this.Controls.Add(this.title);
             this.Controls.Add(this.errorOutput);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Stolen Goods";
             this.ResumeLayout(false);
