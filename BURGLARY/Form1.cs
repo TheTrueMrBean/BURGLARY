@@ -244,6 +244,12 @@ namespace BURGLARY
             finalCrowbar.Text = "";
             finalSkiMask.Text = "";
             finalSkiMask.Visible = false;
+            titleRecipt.Visible =false;
+            finalSubtotal.Visible = false;
+            finalTax.Visible = false;
+            finalTotal.Visible = false;
+            finalTendered.Visible = false;
+            finalChange.Visible = false;
 
 
         }
