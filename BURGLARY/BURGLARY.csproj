@@ -89,5 +89,8 @@
   <ItemGroup>
     <None Include="Resources\steve_calling-Dave-1592335974.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P90 Gun Fire-SoundBible.com-1098578777.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

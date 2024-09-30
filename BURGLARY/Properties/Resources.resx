@@ -124,6 +124,9 @@
   <data name="Checkout_Scanner_Beep_SoundBible_com_593325210" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Checkout Scanner Beep-SoundBible.com-593325210.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Easteregg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\P90 Gun Fire-SoundBible.com-1098578777.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="steve_calling_Dave_1592335974" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\steve_calling-Dave-1592335974.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>

@@ -1,6 +1,6 @@
 ﻿namespace BURGLARY
 {
-    partial class Form1
+    partial class Background
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Background));
             this.title = new System.Windows.Forms.Label();
             this.flashlightInput = new System.Windows.Forms.TextBox();
             this.crowbarInput = new System.Windows.Forms.TextBox();
@@ -78,6 +78,7 @@
             this.finalOrderNumber = new System.Windows.Forms.Label();
             this.finalOrderName = new System.Windows.Forms.Label();
             this.errorOutput = new System.Windows.Forms.Label();
+            this.finalSecret = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // title
@@ -618,7 +619,16 @@
             this.errorOutput.TabIndex = 48;
             this.errorOutput.Visible = false;
             // 
-            // Form1
+            // finalSecret
+            // 
+            this.finalSecret.BackColor = System.Drawing.Color.Red;
+            this.finalSecret.Location = new System.Drawing.Point(-1, 2);
+            this.finalSecret.Name = "finalSecret";
+            this.finalSecret.Size = new System.Drawing.Size(812, 509);
+            this.finalSecret.TabIndex = 49;
+            this.finalSecret.Visible = false;
+            // 
+            // Background
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -674,9 +684,10 @@
             this.Controls.Add(this.flashlightInput);
             this.Controls.Add(this.title);
             this.Controls.Add(this.errorOutput);
+            this.Controls.Add(this.finalSecret);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "Background";
             this.Text = "Stolen Goods";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -734,6 +745,7 @@
         private System.Windows.Forms.Label finalOrderNumber;
         private System.Windows.Forms.Label finalOrderName;
         private System.Windows.Forms.Label errorOutput;
+        private System.Windows.Forms.Label finalSecret;
     }
 }
 
