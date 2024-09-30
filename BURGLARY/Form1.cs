@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace BURGLARY
 {
-    public partial class Background : Form
+    public partial class Form1 : Form
     {
 
         double flashlightPrice = 5;
@@ -32,8 +32,7 @@ namespace BURGLARY
         double skiMaskVari;
         SoundPlayer player = new SoundPlayer(Properties.Resources.Checkout_Scanner_Beep_SoundBible_com_593325210);
         SoundPlayer steve = new SoundPlayer(Properties.Resources.steve_calling_Dave_1592335974);
-        SoundPlayer secret = new SoundPlayer(Properties.Resources.Easteregg);
-        public Background()
+        public Form1()
         {
             InitializeComponent();
         }
@@ -92,98 +91,9 @@ namespace BURGLARY
         {
             try
             {
-                if (tenderedVari < totalVari)
-                {
-                    errorOutput.Text = "are you trying to rob me";
-                }
                 errorOutput.Text = "";
                 errorOutput.Visible = false;
                 tenderedVari = Convert.ToDouble(tenderedInput.Text);
-                
-
-
-                if (tenderedVari < totalVari)
-                {
-                    errorOutput.Visible = true;
-                    errorOutput.Text = "are you trying to rob me";
-                    Refresh();
-                    Thread.Sleep (2000);
-                    errorOutput.Text = "I don't like scammers";
-                    Refresh();
-                    Thread.Sleep (2000);
-                    flashlightInput.Text = "";
-                    crowbarInput.Text = "";
-                    skiMaskInput.Text = "";
-                    calculateT.Enabled = false;
-                    printRecipt.Enabled = false;
-                    nameInput.Text = "";
-                    tenderedInput.Text = "";
-                    subtotalDisplay.Text = "";
-                    taxDisplay.Text = "";
-                    totalDisplay.Text = "";
-                    changeDisplay.Text = "";
-                    errorOutput.Visible = false;
-                    flashlightRecipt.Visible = false;
-                    crowbarDisplay.Visible = false;
-                    skiMaskRecipt.Visible = false;
-                    subtotalRecipt.Visible = false;
-                    totalRecipt.Visible = false;
-                    taxRecipt.Visible = false;
-                    tenderedRecipt.Visible = false;
-                    changeRecipt.Visible = false;
-                    message.Visible = false;
-                    dateRecipt.Visible = false;
-                    orderRecipt.Visible = false;
-                    nameRecipt.Visible = false;
-                    finalFlashlight.Visible = false;
-                    finalCrowbar.Visible = false;
-                    finalFlashlight.Text = "";
-                    finalCrowbar.Text = "";
-                    finalSkiMask.Text = "";
-                    finalSkiMask.Visible = false;
-                    titleRecipt.Visible = false;
-                    finalSubtotal.Visible = false;
-                    finalTax.Visible = false;
-                    finalTotal.Visible = false;
-                    finalTendered.Visible = false;
-                    finalChange.Visible = false;
-                    finalDate.Visible = false;
-                    finalOrderName.Visible = false;
-                    finalOrderNumber.Visible = false;
-                    newOrder.Visible = false;
-                    prices.Visible = false;
-                    flashlight.Visible = false;
-                    skiMask.Visible = false;
-                    Crowbar.Visible = false;
-                    total.Visible = false;
-                    subtotal.Visible = false;
-                    tax.Visible = false;
-                    change.Visible = false;
-                    Order.Visible = false;
-                    flashlightInput.Visible = false;
-                    skiMaskInput.Visible = false;
-                    crowbarInput.Visible = false;
-                    calculate.Visible = false;
-                    calculateT.Visible = false;
-                    tenderedInput.Visible = false;
-                    nameInput.Visible = false;
-                    title.Visible = false;
-                    tendered.Visible = false;
-                    printRecipt.Visible = false;
-                    finalSecret.Visible = true;
-                    
-
-                    secret.Play();
-                    Refresh();
-                    Thread.Sleep(800);
-                    secret.Stop();
-                    Refresh();
-                    Thread.Sleep(6000);
-                    Close();
-
-
-
-                }
 
                 changeVari = tenderedVari - totalVari;
                 changeDisplay.Text = $"{changeVari.ToString("C")}";
@@ -203,7 +113,6 @@ namespace BURGLARY
 
         private void printRecipt_Click(object sender, EventArgs e)
         {
-            
             orderVari = nameInput.Text;
             titleRecipt.Visible = true;
             errorOutput.Visible = true;
@@ -341,14 +250,8 @@ namespace BURGLARY
             finalTotal.Visible = false;
             finalTendered.Visible = false;
             finalChange.Visible = false;
-            finalDate.Visible = false;
-            finalOrderName.Visible = false;
-            finalOrderNumber.Visible = false;
-            
 
 
         }
-
-       
     }
 }

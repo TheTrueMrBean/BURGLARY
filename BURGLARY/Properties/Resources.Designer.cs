@@ -82,15 +82,6 @@ namespace BURGLARY.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Easteregg {
-            get {
-                return ResourceManager.GetStream("Easteregg", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         internal static System.IO.UnmanagedMemoryStream steve_calling_Dave_1592335974 {
             get {
                 return ResourceManager.GetStream("steve_calling_Dave_1592335974", resourceCulture);
