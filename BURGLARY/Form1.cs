@@ -14,7 +14,7 @@ namespace BURGLARY
 {
     public partial class Form1 : Form
     {
-
+        //making the variables for the code
         double flashlightPrice = 5;
         double crowbarPrice = 15;
         double skiMaskPrice = 7.5;
@@ -44,10 +44,7 @@ namespace BURGLARY
                 errorOutput.Text = "";
                 errorOutput.Visible = false;
 
-
-                 flashlightPrice = 5;
-                crowbarPrice = 15;
-                 skiMaskPrice = 7.5;
+                //checking how many flashlights Ski Mask And Crowbars you enter also the cost of it
                 skiMaskNumber = Convert.ToDouble(skiMaskInput.Text);
                 flashlightNumber = Convert.ToDouble(flashlightInput.Text);
                 crowbarNumber = Convert.ToDouble(crowbarInput.Text);
@@ -58,7 +55,7 @@ namespace BURGLARY
                  subtotalVari = flashlightVari + crowbarVari + skiMaskVari;
                  taxVari = subtotalVari * .13;
                  totalVari = subtotalVari + taxVari;
-
+                // Shows subtotal tax and total 
                 subtotalDisplay.Text = $"{subtotalVari.ToString("C")}";
                 player.Play();
                 Refresh();
@@ -91,6 +88,7 @@ namespace BURGLARY
         {
             try
             {
+                //Checks tendered and change
                 errorOutput.Text = "";
                 errorOutput.Visible = false;
                 tenderedVari = Convert.ToDouble(tenderedInput.Text);
@@ -113,6 +111,7 @@ namespace BURGLARY
 
         private void printRecipt_Click(object sender, EventArgs e)
         {
+            //Prints the recipt
             orderVari = nameInput.Text;
             titleRecipt.Visible = true;
             errorOutput.Visible = true;
@@ -214,6 +213,8 @@ namespace BURGLARY
 
         private void newOrder_Click(object sender, EventArgs e)
         {
+            //Makes a new order
+            
             flashlightInput.Text = "";
             crowbarInput.Text = "";
             skiMaskInput.Text = "";
